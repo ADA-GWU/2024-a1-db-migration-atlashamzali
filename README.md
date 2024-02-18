@@ -3,6 +3,11 @@
 <h1>Database Migration and Rollback</h1>
 <h2>Migration Steps<h2>
 <h3>Rename Columns and Change Data Types:<h3>
-Rename the column <b>ST_ID</b> to <b>STUDENT_ID</b> in the <b>STUDENTS</b> table.
-Change the data type of columns <b>ST_NAME</b> and <b>ST_LAST </b>to accommodate longer names.
-Rename the column <b>INTEREST</b> to <b>INTERESTS</b> in the <b>INTERESTS </b> table
+Rename the column ST_ID to STUDENT_ID in the STUDENTS table.
+Change the data type of columns ST_NAME and ST_LAST to accommodate longer names.
+Rename the column INTEREST to INTERESTS in the INTERESTS table.
+<h3>Backing Up Data and Modifying Table Structure:<h3>
+Create a backup table called INTERESTS_BACKUP to store interests for each student.
+Copy interests from the original INTERESTS table into the backup table.
+Drop the original INTERESTS table.
+Rename the backup table to replace the original INTERESTS table.
