@@ -11,3 +11,13 @@ Create a backup table called INTERESTS_BACKUP to store interests for each studen
 Copy interests from the original INTERESTS table into the backup table.
 Drop the original INTERESTS table.
 Rename the backup table to replace the original INTERESTS table.
+
+<h2>Rollback Steps<h2>
+<h3>Restore the original Interests data:<h3>
+Create a temporary table to hold interests in the original format.
+Copy interests from the modified table structure into the temporary table.
+Drop the modified table.
+Rename the temporary table to replace the original table.
+<h3>Rollback Changes to Students Table:<h3>
+Undo column renaming and data type changes in the STUDENTS table to revert to the original structure.
+
