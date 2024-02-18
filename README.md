@@ -3,8 +3,6 @@
 <h1>Database Migration and Rollback</h1>
 <h2>Migration Steps<h2>
 <h3>Rename Columns and Change Data Types:<h3>
-<p>
 Rename the column <b>ST_ID</b> to <b>STUDENT_ID</b> in the <b>STUDENTS</b> table.
 Change the data type of columns <b>ST_NAME</b> and <b>ST_LAST </b>to accommodate longer names.
 Rename the column <b>INTEREST</b> to <b>INTERESTS</b> in the <b>INTERESTS </b> table
-</p>
