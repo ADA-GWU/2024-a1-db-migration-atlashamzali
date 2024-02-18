@@ -8,7 +8,8 @@
     <title>Database Migration and Rollback</title>
 </head>
 <body>
-
+<p>Before performing migration, ensure that the required tables are set up correctly. Execute the following SQL scripts in the specified order:</p>
+<p>psql -d my_db -f students_table.sql</p>
 <h1>Database Migration and Rollback</h1>
 
 <h2>Migration Steps</h2>
